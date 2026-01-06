@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Accommodation Finder - Project Presentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css">
+    <style>
+        .reveal .slides section {
+            text-align: left;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #7c3aed;
+        }
+        .reveal .title-slide {
+            text-align: center;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .feature-card {
+            background: #f3f4f6;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #7c3aed;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .tech-badge {
+            background: #7c3aed;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .code-block {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.8em;
+            overflow-x: auto;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .stat-box {
+            text-align: center;
+            padding: 20px;
+            background: #f3f4f6;
+            border-radius: 8px;
+        }
+        .stat-number {
+            font-size: 3em;
+            font-weight: bold;
+            color: #7c3aed;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1: Title -->
+            <section class="title-slide">
+                <h1>PG Accommodation Finder</h1>
+                <h3>A Complete Frontend React Application</h3>
+                <p style="margin-top: 50px; color: #6b7280;">
+                    Find Your Perfect Paying Guest Accommodation
+                </p>
+                <p style="color: #9ca3af; font-size: 0.8em; margin-top: 30px;">
+                    Built with React, React Router, and TailwindCSS
+                </p>
+            </section>
+
+            <!-- Slide 2: Problem Statement -->
+            <section>
+                <h2>Problem Statement</h2>
+                <ul style="font-size: 0.9em; line-height: 1.8;">
+                    <li>Students and professionals struggle to find suitable PG accommodations</li>
+                    <li>Lack of centralized platform for PG listings</li>
+                    <li>Difficulty in filtering by budget, location, and amenities</li>
+                    <li>No easy way for owners to manage their listings</li>
+                    <li>Limited access to reviews and ratings</li>
+                </ul>
+                <div style="margin-top: 40px; padding: 20px; background: #fef3c7; border-radius: 8px;">
+                    <strong>Solution:</strong> A comprehensive web application that connects students with PG owners, 
+                    providing search, filter, booking, and management capabilities.
+                </div>
+            </section>
+
+            <!-- Slide 3: Project Overview -->
+            <section>
+                <h2>Project Overview</h2>
+                <p style="font-size: 1.1em; margin-bottom: 30px;">
+                    A full-featured <span class="highlight">frontend-only</span> React application for finding and managing 
+                    Paying Guest (PG) accommodations.
+                </p>
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="stat-number">10+</div>
+                        <div>Pages</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">2</div>
+                        <div>User Types</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">100%</div>
+                        <div>Frontend</div>
+                    </div>
+                </div>
+                <ul style="margin-top: 40px; font-size: 0.9em;">
+                    <li>Complete CRUD operations for PG listings</li>
+                    <li>Advanced search and filtering system</li>
+                    <li>Booking management system</li>
+                    <li>Review and rating functionality</li>
+                </ul>
+            </section>
+
+            <!-- Slide 4: Key Features - Users -->
+            <section>
+                <h2>Key Features - For Users</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">🔍 Advanced Search</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>Search by name, location, area</li>
+                            <li>Real-time filtering</li>
+                            <li>Multiple filter combinations</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">💰 Budget Filtering</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>Min/Max price range</li>
+                            <li>Sort by price (low to high)</li>
+                            <li>Affordable options highlighted</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">⭐ Reviews & Ratings</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>View authentic reviews</li>
+                            <li>Add your own reviews</li>
+                            <li>Star rating system (1-5)</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">📋 Booking System</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>Request bookings online</li>
+                            <li>Track booking status</li>
+                            <li>Booking confirmation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 5: Key Features - Owners -->
+            <section>
+                <h2>Key Features - For Owners</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">📊 Dashboard</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>View all listings</li>
+                            <li>Booking statistics</li>
+                            <li>Quick status overview</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">➕ Add/Edit PGs</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>Create new listings</li>
+                            <li>Edit existing PGs</li>
+                            <li>Upload multiple images</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">✅ Booking Management</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>View booking requests</li>
+                            <li>Approve/Reject bookings</li>
+                            <li>Track booking status</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">🔄 Status Control</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>Mark as Vacant/Occupied</li>
+                            <li>Update room availability</li>
+                            <li>Real-time status updates</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 6: Tech Stack -->
+            <section>
+                <h2>Technology Stack</h2>
+                <div class="tech-stack">
+                    <div class="tech-badge">React 18</div>
+                    <div class="tech-badge">React Router DOM</div>
+                    <div class="tech-badge">Context API</div>
+                    <div class="tech-badge">TailwindCSS</div>
+                    <div class="tech-badge">Vite</div>
+                    <div class="tech-badge">LocalStorage</div>
+                </div>
+                <div style="margin-top: 40px;">
+                    <h3>Why These Technologies?</h3>
+                    <ul style="font-size: 0.9em;">
+                        <li><strong>React:</strong> Component-based architecture, reusable UI</li>
+                        <li><strong>React Router:</strong> Client-side routing, seamless navigation</li>
+                        <li><strong>Context API:</strong> Global state management without Redux</li>
+                        <li><strong>TailwindCSS:</strong> Utility-first CSS, rapid UI development</li>
+                        <li><strong>Vite:</strong> Fast build tool, excellent dev experience</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Slide 7: Project Structure -->
+            <section>
+                <h2>Project Architecture</h2>
+                <div class="code-block" style="font-size: 0.7em;">
+pg-accommodation-finder/
+├── public/
+│   └── pgs.json              # Sample PG data
+├── src/
+│   ├── components/           # Reusable components
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── PGCard.jsx
+│   │   ├── FilterPanel.jsx
+│   │   └── Icons.jsx
+│   ├── context/
+│   │   └── PGContext.jsx     # Global state management
+│   ├── pages/                # Route components
+│   │   ├── Home.jsx
+│   │   ├── Listings.jsx
+│   │   ├── PGDetails.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── AddPG.jsx
+│   │   └── EditPG.jsx
+│   ├── App.jsx               # Main app with routing
+│   └── main.jsx              # Entry point
+                </div>
+                <p style="margin-top: 20px; font-size: 0.9em;">
+                    <strong>Clean Architecture:</strong> Separation of concerns with components, pages, and context
+                </p>
+            </section>
+
+            <!-- Slide 8: Core Pages -->
+            <section>
+                <h2>Application Pages</h2>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px;">
+                    <div>
+                        <h3 style="color: #7c3aed;">User Pages</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>🏠 Home - Hero section & featured PGs</li>
+                            <li>📋 Listings - Browse with filters</li>
+                            <li>📄 PG Details - Full information</li>
+                            <li>👤 Profile - User profile</li>
+                            <li>🔐 Student Login</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: #7c3aed;">Owner Pages</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>📊 Dashboard - Manage listings</li>
+                            <li>➕ Add PG - Create new listing</li>
+                            <li>✏️ Edit PG - Update existing</li>
+                            <li>🔐 Owner Login</li>
+                            <li>✅ Booking Confirmation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 9: Filtering System -->
+            <section>
+                <h2>Advanced Filtering System</h2>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <div>
+                        <h3 style="color: #7c3aed;">Filter Options</h3>
+                        <ul style="font-size: 0.9em;">
+                            <li>💰 Budget Range (Min/Max)</li>
+                            <li>📍 Location (City)</li>
+                            <li>👥 Gender (Boys/Girls/Unisex)</li>
+                            <li>✨ Amenities (WiFi, AC, Food, etc.)</li>
+                            <li>🔍 Text Search (Name/Area)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: #7c3aed;">Sorting Options</h3>
+                        <ul style="font-size: 0.9em;">
+                            <li>Price: Low to High</li>
+                            <li>Price: High to Low</li>
+                            <li>Rating: High to Low</li>
+                            <li>Rating: Low to High</li>
+                        </ul>
+                        <div style="margin-top: 20px; padding: 15px; background: #f3f4f6; border-radius: 8px;">
+                            <strong>Real-time Updates:</strong> Filters and sorting work together seamlessly
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 10: State Management -->
+            <section>
+                <h2>State Management with Context API</h2>
+                <div class="code-block" style="font-size: 0.75em; margin-bottom: 20px;">
+// PGContext.jsx - Centralized state management
+- listings: All PG data
+- loading: Loading state
+- addPG, updatePG, deletePG: CRUD operations
+- addReview, getReviews: Review management
+- addBooking, getBookings: Booking system
+- updateBookingStatus: Owner booking actions
+                </div>
+                <ul style="font-size: 0.9em;">
+                    <li><strong>Global State:</strong> All components access PG data through context</li>
+                    <li><strong>No Prop Drilling:</strong> Clean component hierarchy</li>
+                    <li><strong>LocalStorage:</strong> Reviews and bookings persist in browser</li>
+                    <li><strong>Real-time Updates:</strong> Changes reflect immediately across app</li>
+                </ul>
+            </section>
+
+            <!-- Slide 11: User Flow -->
+            <section>
+                <h2>User Journey</h2>
+                <div style="font-size: 0.85em; line-height: 2;">
+                    <div style="background: #f3f4f6; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong>1. Browse:</strong> Visit home page → View featured PGs
+                    </div>
+                    <div style="background: #f3f4f6; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong>2. Search:</strong> Go to listings → Apply filters → Sort results
+                    </div>
+                    <div style="background: #f3f4f6; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong>3. Explore:</strong> Click PG card → View details, images, amenities
+                    </div>
+                    <div style="background: #f3f4f6; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong>4. Review:</strong> Read reviews → Add your own review
+                    </div>
+                    <div style="background: #f3f4f6; padding: 15px; border-radius: 8px;">
+                        <strong>5. Book:</strong> Login → Fill booking form → Get confirmation
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 12: Owner Flow -->
+            <section>
+                <h2>Owner Workflow</h2>
+                <div style="font-size: 0.85em; line-height: 2;">
+                    <div style="background: #fef3c7; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong>1. Login:</strong> Owner login page → Access dashboard
+                    </div>
+                    <div style="background: #fef3c7; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong>2. Manage:</strong> View all listings → See statistics
+                    </div>
+                    <div style="background: #fef3c7; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong>3. Add/Edit:</strong> Create new PG or edit existing → Update details
+                    </div>
+                    <div style="background: #fef3c7; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                        <strong>4. Bookings:</strong> View booking requests → Approve/Reject
+                    </div>
+                    <div style="background: #fef3c7; padding: 15px; border-radius: 8px;">
+                        <strong>5. Status:</strong> Update PG status (Vacant/Occupied) → Manage availability
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 13: UI/UX Highlights -->
+            <section>
+                <h2>UI/UX Design Highlights</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">🎨 Modern Design</h3>
+                        <p style="font-size: 0.85em;">Clean, professional interface with purple/indigo theme</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">📱 Responsive</h3>
+                        <p style="font-size: 0.85em;">Works seamlessly on desktop, tablet, and mobile</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">⚡ Fast & Smooth</h3>
+                        <p style="font-size: 0.85em;">Optimized performance with Vite build tool</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">✨ Interactive</h3>
+                        <p style="font-size: 0.85em;">Hover effects, transitions, and smooth animations</p>
+                    </div>
+                </div>
+                <div style="margin-top: 30px; padding: 20px; background: #f3f4f6; border-radius: 8px;">
+                    <strong>Key Features:</strong> Gradient hero sections, card-based layouts, modal forms, 
+                    status badges, and intuitive navigation
+                </div>
+            </section>
+
+            <!-- Slide 14: Data Management -->
+            <section>
+                <h2>Data Storage & Management</h2>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <div>
+                        <h3 style="color: #7c3aed;">PG Listings</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>Stored in <code>public/pgs.json</code></li>
+                            <li>Loaded via fetch() on app start</li>
+                            <li>CRUD operations update in-memory state</li>
+                            <li>Can be extended to API backend</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: #7c3aed;">User Data</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>Reviews: localStorage (per PG)</li>
+                            <li>Bookings: localStorage</li>
+                            <li>Login status: localStorage</li>
+                            <li>Persists across sessions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="margin-top: 30px; padding: 15px; background: #fef3c7; border-radius: 8px;">
+                    <strong>Note:</strong> Frontend-only application. Can easily be extended with backend API integration.
+                </div>
+            </section>
+
+            <!-- Slide 15: Key Components -->
+            <section>
+                <h2>Reusable Components</h2>
+                <div style="font-size: 0.85em;">
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                        <div>
+                            <h3 style="color: #7c3aed;">PGCard</h3>
+                            <ul>
+                                <li>Displays PG information</li>
+                                <li>Image, name, location</li>
+                                <li>Price and rating</li>
+                                <li>Click to view details</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="color: #7c3aed;">FilterPanel</h3>
+                            <ul>
+                                <li>Budget range inputs</li>
+                                <li>Location dropdown</li>
+                                <li>Gender selection</li>
+                                <li>Amenities checkboxes</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="color: #7c3aed;">Navbar</h3>
+                            <ul>
+                                <li>Logo and navigation</li>
+                                <li>Login buttons</li>
+                                <li>User menu</li>
+                                <li>Responsive design</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="color: #7c3aed;">Icons</h3>
+                            <ul>
+                                <li>Custom SVG icons</li>
+                                <li>Verified, Star, Search</li>
+                                <li>Location, etc.</li>
+                                <li>Reusable across app</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 16: Technical Highlights -->
+            <section>
+                <h2>Technical Implementation Highlights</h2>
+                <ul style="font-size: 0.9em; line-height: 1.8;">
+                    <li><strong>React Hooks:</strong> useState, useEffect, useContext, useMemo for efficient state management</li>
+                    <li><strong>React Router:</strong> Dynamic routing with URL parameters (/pg/:id, /edit-pg/:id)</li>
+                    <li><strong>Protected Routes:</strong> Dashboard redirects to login if not authenticated</li>
+                    <li><strong>Memoization:</strong> useMemo for expensive filter/sort operations</li>
+                    <li><strong>Form Handling:</strong> Controlled components with validation</li>
+                    <li><strong>Error Handling:</strong> Image fallbacks, 404 pages, loading states</li>
+                    <li><strong>Responsive Design:</strong> TailwindCSS breakpoints (md:, lg:)</li>
+                </ul>
+            </section>
+
+            <!-- Slide 17: Features Summary -->
+            <section>
+                <h2>Complete Feature List</h2>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; font-size: 0.85em;">
+                    <div>
+                        <h3 style="color: #7c3aed;">Search & Discovery</h3>
+                        <ul>
+                            <li>✅ Text search (name, location, area)</li>
+                            <li>✅ Multi-filter system</li>
+                            <li>✅ Sort by price/rating</li>
+                            <li>✅ Featured PGs on home</li>
+                            <li>✅ Real-time result count</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: #7c3aed;">PG Management</h3>
+                        <ul>
+                            <li>✅ Add new PG listing</li>
+                            <li>✅ Edit existing PG</li>
+                            <li>✅ Delete PG</li>
+                            <li>✅ Update status</li>
+                            <li>✅ Multiple images</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: #7c3aed;">Reviews & Ratings</h3>
+                        <ul>
+                            <li>✅ Add reviews</li>
+                            <li>✅ View all reviews</li>
+                            <li>✅ Star rating (1-5)</li>
+                            <li>✅ Average rating calculation</li>
+                            <li>✅ Review persistence</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="color: #7c3aed;">Booking System</h3>
+                        <ul>
+                            <li>✅ Request booking</li>
+                            <li>✅ Booking form</li>
+                            <li>✅ Owner approval/rejection</li>
+                            <li>✅ Booking confirmation</li>
+                            <li>✅ Booking history</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 18: Future Enhancements -->
+            <section>
+                <h2>Future Enhancements</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">🔌 Backend Integration</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>REST API or GraphQL</li>
+                            <li>Database (MongoDB/PostgreSQL)</li>
+                            <li>User authentication (JWT)</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">💳 Payment Gateway</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>Online payment integration</li>
+                            <li>Booking deposits</li>
+                            <li>Payment history</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">🗺️ Maps Integration</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>Google Maps API</li>
+                            <li>Location visualization</li>
+                            <li>Distance calculation</li>
+                        </ul>
+                    </div>
+                    <div class="feature-card">
+                        <h3 style="color: #7c3aed; margin-top: 0;">📧 Notifications</h3>
+                        <ul style="font-size: 0.85em;">
+                            <li>Email notifications</li>
+                            <li>SMS alerts</li>
+                            <li>In-app notifications</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 19: Installation & Usage -->
+            <section>
+                <h2>Getting Started</h2>
+                <div style="font-size: 0.9em;">
+                    <h3 style="color: #7c3aed;">Installation</h3>
+                    <div class="code-block" style="font-size: 0.8em; margin: 15px 0;">
+npm install
+npm run dev
+                    </div>
+                    <h3 style="color: #7c3aed; margin-top: 30px;">Usage</h3>
+                    <ul style="line-height: 1.8;">
+                        <li><strong>Users:</strong> Browse → Search → Filter → View Details → Book</li>
+                        <li><strong>Owners:</strong> Login → Dashboard → Add/Edit PGs → Manage Bookings</li>
+                    </ul>
+                    <div style="margin-top: 30px; padding: 15px; background: #f3f4f6; border-radius: 8px;">
+                        <strong>Build for Production:</strong> <code>npm run build</code>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Slide 20: Conclusion -->
+            <section class="title-slide">
+                <h2>Thank You!</h2>
+                <div style="margin-top: 50px; font-size: 1.1em;">
+                    <p style="color: #6b7280; margin: 20px 0;">
+                        A complete, production-ready PG accommodation finder application
+                    </p>
+                    <div style="margin-top: 40px; padding: 30px; background: #f3f4f6; border-radius: 12px; display: inline-block;">
+                        <p style="margin: 10px 0;"><strong>Built with:</strong> React, React Router, TailwindCSS</p>
+                        <p style="margin: 10px 0;"><strong>Features:</strong> Search, Filter, Book, Manage</p>
+                        <p style="margin: 10px 0;"><strong>Status:</strong> Frontend Complete, Ready for Backend</p>
+                    </div>
+                </div>
+                <p style="margin-top: 50px; color: #9ca3af; font-size: 0.9em;">
+                    Questions?
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'slide'
+        });
+    </script>
+</body>
+</html>

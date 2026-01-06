@@ -1,0 +1,203 @@
+[
+  {
+    "id": 1,
+    "name": "Comfort Stay PG",
+    "location": "Bangalore",
+    "area": "Koramangala",
+    "address": "123, 5th Block, Koramangala",
+    "price": 12000,
+    "gender": "Unisex",
+    "amenities": ["WiFi", "Food", "Laundry", "Security", "Power Backup"],
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800"
+    ],
+    "rating": 4.5,
+    "description": "A comfortable and well-maintained PG accommodation in the heart of Koramangala. Perfect for students and working professionals.",
+    "owner": "Rajesh Kumar",
+    "contact": "+91 9876543210",
+    "verified": true,
+    "availableRooms": 5
+  },
+  {
+    "id": 2,
+    "name": "Elite Residency",
+    "location": "Mumbai",
+    "area": "Andheri",
+    "address": "456, Andheri West, Near Metro Station",
+    "price": 15000,
+    "gender": "Unisex",
+    "amenities": ["WiFi", "AC", "Food", "Parking", "Security", "Gym", "Power Backup"],
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+    ],
+    "rating": 4.8,
+    "description": "Premium PG accommodation with modern amenities. Located in a prime area with excellent connectivity.",
+    "owner": "Priya Sharma",
+    "contact": "+91 9876543211",
+    "verified": true,
+    "availableRooms": 3
+  },
+  {
+    "id": 3,
+    "name": "Student Hub PG",
+    "location": "Delhi",
+    "area": "Dwarka",
+    "address": "789, Sector 12, Dwarka",
+    "price": 8000,
+    "gender": "Boys",
+    "amenities": ["WiFi", "Food", "Laundry", "Security"],
+    "images": [
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800",
+      "https://images.unsplash.com/photo-1505693416388-ac5ce0fe0f37?w=800"
+    ],
+    "rating": 4.2,
+    "description": "Budget-friendly PG accommodation ideal for students. Clean rooms and homely atmosphere.",
+    "owner": "Amit Singh",
+    "contact": "+91 9876543212",
+    "verified": true,
+    "availableRooms": 8
+  },
+  {
+    "id": 4,
+    "name": "Green Valley PG",
+    "location": "Pune",
+    "area": "Hinjewadi",
+    "address": "321, Hinjewadi Phase 1",
+    "price": 10000,
+    "gender": "Unisex",
+    "amenities": ["WiFi", "AC", "Parking", "Security", "Power Backup"],
+    "images": [
+      "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800",
+      "https://images.unsplash.com/photo-1560449752-bc3d0c0e0b0a?w=800"
+    ],
+    "rating": 4.6,
+    "description": "Spacious PG with green surroundings. Perfect for IT professionals working in Hinjewadi.",
+    "owner": "Sneha Patel",
+    "contact": "+91 9876543213",
+    "verified": true,
+    "availableRooms": 6
+  },
+  {
+    "id": 5,
+    "name": "Modern Living PG",
+    "location": "Hyderabad",
+    "area": "Gachibowli",
+    "address": "654, Gachibowli, Near Financial District",
+    "price": 11000,
+    "gender": "Girls",
+    "amenities": ["WiFi", "AC", "Food", "Laundry", "Parking", "Security", "Gym"],
+    "images": [
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800",
+      "https://images.unsplash.com/photo-1560448204-61dc36dc5f07?w=800"
+    ],
+    "rating": 4.7,
+    "description": "Modern and secure PG exclusively for girls. Located in the IT hub with excellent facilities.",
+    "owner": "Kavita Reddy",
+    "contact": "+91 9876543214",
+    "verified": true,
+    "availableRooms": 4
+  },
+  {
+    "id": 6,
+    "name": "Budget Stay PG",
+    "location": "Bangalore",
+    "area": "Whitefield",
+    "address": "987, Whitefield Main Road",
+    "price": 7000,
+    "gender": "Boys",
+    "amenities": ["WiFi", "Food", "Security"],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800",
+      "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800"
+    ],
+    "rating": 3.9,
+    "description": "Affordable PG accommodation with basic amenities. Great value for money.",
+    "owner": "Vikram Mehta",
+    "contact": "+91 9876543215",
+    "verified": true,
+    "availableRooms": 10
+  },
+  {
+    "id": 7,
+    "name": "Premium Residency",
+    "location": "Mumbai",
+    "area": "Powai",
+    "address": "147, Powai, Near IIT",
+    "price": 18000,
+    "gender": "Unisex",
+    "amenities": ["WiFi", "AC", "Food", "Laundry", "Parking", "Security", "Gym", "Power Backup", "Housekeeping"],
+    "images": [
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"
+    ],
+    "rating": 4.9,
+    "description": "Luxury PG accommodation with premium amenities. Best-in-class facilities and services.",
+    "owner": "Rahul Kapoor",
+    "contact": "+91 9876543216",
+    "verified": true,
+    "availableRooms": 2
+  },
+  {
+    "id": 8,
+    "name": "Cozy Nest PG",
+    "location": "Chennai",
+    "area": "OMR",
+    "address": "258, OMR Road, Sholinganallur",
+    "price": 9500,
+    "gender": "Unisex",
+    "amenities": ["WiFi", "AC", "Food", "Security", "Power Backup"],
+    "images": [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800"
+    ],
+    "rating": 4.4,
+    "description": "Comfortable PG with a homely feel. Well-connected location with good transport facilities.",
+    "owner": "Lakshmi Iyer",
+    "contact": "+91 9876543217",
+    "verified": true,
+    "availableRooms": 7
+  },
+  {
+    "id": 9,
+    "name": "City Center PG",
+    "location": "Delhi",
+    "area": "Rohini",
+    "address": "369, Sector 18, Rohini",
+    "price": 9000,
+    "gender": "Unisex",
+    "amenities": ["WiFi", "Food", "Laundry", "Parking", "Security"],
+    "images": [
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800",
+      "https://images.unsplash.com/photo-1505693416388-ac5ce0fe0f37?w=800"
+    ],
+    "rating": 4.3,
+    "description": "Centrally located PG with easy access to metro and bus services. Ideal for daily commuters.",
+    "owner": "Deepak Verma",
+    "contact": "+91 9876543218",
+    "verified": true,
+    "availableRooms": 9
+  },
+  {
+    "id": 10,
+    "name": "Tech Park PG",
+    "location": "Pune",
+    "area": "Viman Nagar",
+    "address": "741, Viman Nagar, Near Airport",
+    "price": 13000,
+    "gender": "Unisex",
+    "amenities": ["WiFi", "AC", "Food", "Laundry", "Parking", "Security", "Power Backup", "Gym"],
+    "images": [
+      "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800",
+      "https://images.unsplash.com/photo-1560449752-bc3d0c0e0b0a?w=800"
+    ],
+    "rating": 4.6,
+    "description": "Modern PG near tech parks. Perfect for IT professionals with premium amenities.",
+    "owner": "Anjali Deshmukh",
+    "contact": "+91 9876543219",
+    "verified": true,
+    "availableRooms": 5
+  }
+]
+
